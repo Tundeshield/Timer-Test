@@ -1,5 +1,6 @@
 .lapTime {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
   align-items: center;
   justify-content: space-between;
   padding: 0.1em;
