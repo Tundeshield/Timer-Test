@@ -8,7 +8,9 @@ const LapTime = ({ handleDeleteLapTime, lap }) => {
       <span className="timer__count">Hours: {!lap.hour ? "0" : lap.hour}</span>
       <span className="timer__count">Minutes: {lap.minutes}</span>
       <span className="timer__count">Seconds: {lap.seconds}</span>
-      <span className="timer__count centi--sec">Mili: {lap.milliseconds}</span>
+      <span className="timer__count centi--sec">
+        Miliseconds: {lap.milliseconds}
+      </span>
 
       <img
         src={DeleteIcon}

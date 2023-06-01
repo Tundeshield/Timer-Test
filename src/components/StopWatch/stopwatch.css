@@ -8,4 +8,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 1em 3em;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.stopwatch::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.stopwatch::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }

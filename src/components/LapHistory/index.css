@@ -1,3 +1,4 @@
+
 .lapHistory {
   width: 100%;
   margin-bottom: 2em;
@@ -5,19 +6,23 @@
 
 .lapHistory > section {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
   align-items: center;
   justify-content: center;
 }
+
 .lapHistory > section > h3 {
+  width: 100%; /* Take full width on small screens */
   text-align: center;
 }
+
 .lapHistory > section > button {
-  width: 6rem;
+  width: 8rem; /* Increase width for better touch interaction */
   height: 3vh;
   text-transform: uppercase;
   border-radius: 14px;
   padding: 5px;
-  margin-left: 2em;
+  margin: 0.5em;
   display: flex;
   border: 2px solid #e42a2a;
   justify-content: center;

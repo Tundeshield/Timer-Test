@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .action__btn-grp {
   display: flex;
   align-items: center;
@@ -37,4 +38,15 @@
 
 .btn_lap {
   background-color: #e42a2a;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 20vw;
+    margin-bottom: 1em;
+  }
+  .action__btn-grp {
+    flex-direction: column;
+    align-content: center;
+  }
 }
