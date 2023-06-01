@@ -8,7 +8,7 @@
   </a>
 
 <h3 align="center">Asthma And Lung Short Test</h3>
-<p>Replicate a poster</p>
+<p>Timer Development</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -29,7 +29,14 @@
 
 ![privew](/public/appSnapshot.jpg)
 
-This project was developed for `Asthma and Lung UK` to test Frontend skills. The application was developed using React JS and pure css. It also mobile responsive.
+This timer application project was developed for `Asthma and Lung UK` to test Frontend skills. The application was developed using React JS and pure css.
+
+Features:
+-Timer display
+-Start, stop, pause, reset button functionalities
+-Add Lap time
+-Delete Lap time
+
 
 <!-- GETTING STARTED -->
 
