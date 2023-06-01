@@ -3,6 +3,7 @@ import Timer from "../Timer";
 import ActionButtons from "../ActionButtons";
 import "./stopwatch.css";
 import LapHistory from "../LapHistory";
+import { v4 as uuidv4 } from "uuid";
 
 const StopWatch = () => {
   const [time, setTime] = useState(0);
@@ -10,6 +11,7 @@ const StopWatch = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [lapTime, setLapTime] = useState({});
   const [lapTimes, setLapTimes] = useState([]);
+  const uniqueId = uuidv4();
 
   useEffect(() => {
     let interval;
@@ -40,12 +42,43 @@ const StopWatch = () => {
   //Method to reset timer
   const handleReset = () => {
     setIsActive(false);
+    setLapTimes([]);
     setTime(0);
   };
 
   //Method to add lap
-  const handleAddLapTime = () => {};
-  const handleDeleteLapTime = (id) => {};
+  const handleAddLapTime = () => {
+    setLapTime(time);
+    // //Add the lap time to the list of lap times
+    const { hour, minutes, seconds, milliseconds } = convertMilliseconds(time);
+    const newLapTime = {
+      id: uniqueId,
+      hour: hour,
+      minutes: minutes,
+      seconds: seconds,
+      milliseconds: milliseconds,
+    };
+    const updatedLapTimes = [...lapTimes, newLapTime];
+    setLapTimes(updatedLapTimes);
+
+    console.log(updatedLapTimes);
+  };
+  //Convert the milliseconds
+  const convertMilliseconds = (time) => {
+    const hours = Math.floor(time / 3600000);
+    const minutes = Math.floor((time % 3600000) / 60000);
+    const seconds = Math.floor((time % 60000) / 1000);
+    const milliseconds = time % 1000;
+
+    return { hours, minutes, seconds, milliseconds };
+  };
+
+  const handleDeleteLapTime = (id) => {
+    console.log(id);
+    //Filter lap list with id
+    const updatedLapList = lapTimes.filter((x) => x.id !== id);
+    setLapTimes(updatedLapList);
+  };
   const clearLapHistory = () => {
     setLapTimes([]);
   };
@@ -62,7 +95,11 @@ const StopWatch = () => {
           isActive={isActive}
           isPaused={isPaused}
         />
-        <LapHistory />
+        <LapHistory
+          handleDeleteLapTime={handleDeleteLapTime}
+          lapTimes={lapTimes}
+          clearLapHistory={clearLapHistory}
+        />
       </section>
     </>
   );
