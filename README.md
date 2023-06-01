@@ -32,11 +32,12 @@
 This timer application project was developed for `Asthma and Lung UK` to test Frontend skills. The application was developed using React JS and pure css.
 
 Features:
--Timer display
--Start, stop, pause, reset button functionalities
--Add Lap time
--Delete Lap time
 
+- Timer display
+- Start, stop, pause, reset button functionalities
+- Add Lap time
+- Delete Lap time
+- Mobile responsive
 
 <!-- GETTING STARTED -->
 
