@@ -27,7 +27,7 @@
 
 ## About the Project
 
-![privew](/public/appSnapshot.PNG)
+![privew](/public/appSnapshot.jpg)
 
 This project was developed for `Asthma and Lung UK` to test Frontend skills. The application was developed using React JS and pure css. It also mobile responsive.
 
