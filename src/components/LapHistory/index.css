@@ -1,0 +1,8 @@
+.lapHistory {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.lapHistory > h3 {
+  text-align: center;
+}

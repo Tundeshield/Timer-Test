@@ -1,0 +1,12 @@
+.lapTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .1em;
+  border-bottom: 1px solid red;
+}
+
+.lapTime > img {
+  width: 18px;
+  cursor: pointer;
+}
