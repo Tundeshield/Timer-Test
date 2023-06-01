@@ -22,14 +22,16 @@
   - [Installation](#installation)
     - [Clone the project](#clone-the-project)
     - [Install packages](#install-packages)
-  - [Start](#start) - [Run the app](#run-the-app)
-  <!-- ABOUT THE PROJECT -->
+  - [Start](#start)
+    - [Run the app](#run-the-app)
+<!-- ABOUT THE PROJECT -->
 
 ## About the Project
 
-![privew](/public/appSnapshot.PNG)
+![privew](/public/viva.PNG)
 
-This project was developed for `Asthma and Lung UK` to test Frontend skills. The application was developed using React JS and pure css. It also mobile responsive.
+This project was developed for `Asthma and Lung UK` to test design skills. it was built soley with HTML/CSS
+
 
 <!-- GETTING STARTED -->
 
@@ -63,13 +65,13 @@ You have to make sure that `npm` and `node` have been installed in your local ma
 #### Clone the project
 
 ```bash
-git clone https://github.com/Tundeshield/Timer-Test.git
+git clone https://github.com/Tundeshield/AsthmaandLung
 ```
 
 #### Install packages
 
 ```bash
-cd frontend
+cd new-user-requests
 npm install
 ```
 
@@ -79,6 +81,8 @@ npm install
 
 #### Run the app
 
-To run the app, kindly type `npm run start`.
+To run the app, kindly install install live server on your VS code, then right click on the html page and select `Open with Live Server` option.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
