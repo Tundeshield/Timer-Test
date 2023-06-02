@@ -87,6 +87,6 @@ npm install
 
 #### Run the app
 
-To run the app, kindly type `npm run start`.
+To run the app, kindly type `npm start`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
